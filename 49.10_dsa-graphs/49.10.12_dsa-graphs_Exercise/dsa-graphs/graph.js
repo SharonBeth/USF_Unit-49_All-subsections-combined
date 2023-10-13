@@ -72,12 +72,12 @@ class Graph {
   }
 
   // this function returns an array of Node values using BFS
-  breadthFirstSearch(start) {
+  breadthFirstSearch(start, end) {
     if (start === end) {
       return [start.value];
     }
 
-    var queue = [start];
+    let queue = [start];
     let visited = new Set();
     let predecessors = {};
     let path = [];
